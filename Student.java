@@ -2,23 +2,29 @@ package SimplePrograms;
 
 public class Student {
 
-	int id = 1000; // [-2147483648 to 2147483647]
-	byte age = 18; // [-128 to 127]
-	short rank = 165; // [-32,768 to 32,767]
-	long mobileNo = 91_9876543210L; // [-9,223,372,036,854,775,808 (-263) to 9,223,372,036,854,775,807 (263 – 1)]
+	int id = 1000;
+	byte age = 18;
+	long mobileNo = 91_9876543210L;
 	
-	// Integer Literals: int literal, Long literal
+	float gpa = 3.8f; 
+	// while taking decimal values, it consider as double
+	// thats why we need to write f or F at end of floating 
+	// values. Otherwise error will show.
+	// floats has the precision of 7 decimal points
 	
-	byte minValue = Byte.MIN_VALUE;
-	byte maxValue = Byte.MAX_VALUE;
+	double percentage = 98.56;
+	// We don't need to write but we can as 
+	// double percentage = 98.56d;
+	// double has precision of 15 decimal points
+	// double is most prfarable over floats
+	
 	
 	void compute() {
 		System.out.println("Id: " + id);
 		System.out.println("Age: " + age);
-		System.out.println("Rank: " + rank);
 		System.out.println("Mobile No: " + mobileNo);
-		System.out.println("minValue: " + minValue);
-		System.out.println("maxValue: " + maxValue);
+		System.out.println("GPA: " + gpa);
+		System.out.println("Percentage: " + percentage);
 	}
 	public static void main(String[] args) {
 	
